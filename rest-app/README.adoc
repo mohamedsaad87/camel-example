@@ -1,0 +1,14 @@
+oc create secret generic kafka-props --from-file application.properties
+
+kamel run Hello.java --name rest-app --open-api file:hello-api.json --resource file:hello-api.json --resource file:adm/request.adm --resource file:adm/response.adm --property api.resources=file:/etc/camel/resources --property backend-ep=soap-app.demo.svc/service/SampleRoute --config secret:kafka-props
+
+curl -v \
+-H "content-type: application/json" \
+'http://rest-app-demo.apps.cluster-6km6w.6km6w.sandbox1144.opentlc.com/hello?name=test'
+
+== Component Reference 
+- https://access.redhat.com/webassets/avalon/d/red_hat_integration/2021.q3/apache-camel-3.10-doc/components/latest/atlasmap-component.html
+- https://access.redhat.com/webassets/avalon/d/red_hat_integration/2021.q3/apache-camel-3.10-doc/components/latest/index.html
+
+== Camel Tutorial
+- https://tomd.xyz/camel-tutorial/

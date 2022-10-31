@@ -1,0 +1,7 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns1:echoResponse xmlns:ns1="http://service.camel.akbank.com/">
+         <return xmlns="http://service.camel.akbank.com/">Hi test</return>
+      </ns1:echoResponse>
+   </soap:Body>
+</soap:Envelope>

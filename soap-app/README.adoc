@@ -169,6 +169,3 @@ All services can be found here:
 ```bash
 mvn oc:build oc:resource oc:deploy -Popenshift
 ```
-
-Ref:
-- https://developers.redhat.com/articles/2022/03/16/choose-best-camel-your-integration-ride-part-3

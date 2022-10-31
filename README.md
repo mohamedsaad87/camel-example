@@ -1,4 +1,7 @@
-#Scenario
+# Scenario
+
+Scenario is illustraed in the figure below:
+
 [scenario](./image/scenario.png?raw=true "Scenario to Realize")
 
 * Camel with Spring Boot exposes two SOAP services: hello and echo

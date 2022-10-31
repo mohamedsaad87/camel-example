@@ -1,6 +1,5 @@
-Atlasmap:
-
-![scenario](./image/scenario.png?raw=true "Scenario to Realize")
+#Scenario
+[scenario](./image/scenario.png?raw=true "Scenario to Realize")
 
 * Camel with Spring Boot exposes two SOAP services: hello and echo
 * Camel K exposes a rest service (using an open api spec)
@@ -10,15 +9,16 @@ Atlasmap:
   * Sends the response to Kafka
 * Kamelet to get the message from kafka and sends it to sftp
 
+# Atlasmap:
 - https://repo1.maven.org/maven2/io/atlasmap/atlasmap-standalone/2.3.2/atlasmap-standalone-2.3.2.jar
 
-= References
+# References
 - https://www.enterpriseintegrationpatterns.com/
 - https://developers.redhat.com/articles/2022/03/16/choose-best-camel-your-integration-ride-part-3
 
-== Camel Tutorial
+## Camel Tutorial
 - https://tomd.xyz/camel-tutorial/
 
-== Component Reference
+## Component Reference
 - https://access.redhat.com/webassets/avalon/d/red_hat_integration/2021.q3/apache-camel-3.10-doc/components/latest/atlasmap-component.html
 - https://access.redhat.com/webassets/avalon/d/red_hat_integration/2021.q3/apache-camel-3.10-doc/components/latest/index.html

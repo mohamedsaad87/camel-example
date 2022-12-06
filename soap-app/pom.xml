@@ -36,18 +36,10 @@
         <scope>import</scope>
       </dependency>
 
-      <!-- <dependency>
-        <groupId>org.apache.camel.springboot</groupId>
-        <artifactId>camel-spring-boot-dependencies</artifactId>
-        <version>3.19.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency> -->
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
-
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
@@ -80,6 +72,27 @@
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-cxf-starter</artifactId>
     </dependency>
+
+    <!-- Metrics -->
+   
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+  </dependency>
+  
+  <dependency>
+    <groupId>org.apache.camel</groupId>
+    <artifactId>camel-metrics-starter</artifactId>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.camel</groupId>
+  <artifactId>camel-micrometer-starter</artifactId>
+</dependency>
+
+
+
+
 
     <!-- testing -->
     <dependency>

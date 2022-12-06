@@ -18,7 +18,7 @@ public class Hello extends RouteBuilder {
         .transform(simple("${body.replace('<echo>', '<echo xmlns=\"http://service.camel.akbank.com/\">')}"))
         .to("http://{{backend-ep}}")
         .to("atlasmap:{{api.resources}}/response.adm")
-        .wireTap("kafka:{{my.topic}}")
+        .wireTap("kafka:{{my.topic}}?")
         .to("log:info"); 
 
   }

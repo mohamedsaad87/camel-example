@@ -1,7 +1,7 @@
 apiVersion: camel.apache.org/v1alpha1
 kind: KameletBinding
 metadata:
-  name: kafka-to-sftp
+  name: kafka-to-amqp
 spec:
   source:
     ref:
@@ -18,10 +18,9 @@ spec:
     ref:
       kind: Kamelet
       apiVersion: camel.apache.org/v1alpha1
-      name: sftp-sink
+      name: jms-amqp-10-sink
     properties:
-      connectionHost: "sftp.sftp"
-      connectionPort: "22"
-      directoryName: "/upload"
-      username: "foo"
-      password: "123"
+      remoteURI: "amqp://ex-aao-hdls-svc.amq:5672"
+      destinationName: "myTopicAddress"
+      destinationType: "topic"
+
